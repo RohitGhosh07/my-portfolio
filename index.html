@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Rohit Ghosh</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Rohit Ghosh</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/circled check-photoaidcom-cropped (1)hdd.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Rohit Ghosh</h1>
+      <p class="section__text__p2"> Java Developer </p>
+      <p class="section__text__p2" style="display: none;">Front-End Dev.</p>
+      <p class="section__text__p2" style="display: none;">MERN Stack Dev.</p>
+      <!-- <p class="section__text__p2" style="display: none;">React.js Dev.</p> -->
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/myresume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/icons8-linkedin.gif" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/rohitghosh07/'" />
+        <img src="./assets/icons8-github.gif" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/RohitGhosh07'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/gutar me.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/icons8-code.gif" alt="code icon" class="icon" />
+            <h3>Coding profile</h3>
+            <a href="https://leetcode.com/ionicthor/" target="_blank" class="abt-link">Leetcode </a><br />
+            <a href="https://auth.geeksforgeeks.org/user/ionicthor" target="_blank" class="abt-link">Gfg</a>
+            <br />
+            <a href="https://www.hackerrank.com/ioniccompound6" target="_blank" class="abt-link">Hackerrank</a>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Tech,IT -2024<br />
+              <!-- M.Sc. Masters Degree</p> -->
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I hold a B.Tech in Information Technology from Meghnad Saha Institute of Technology, with expertise in
+            Java and a spectrum of front-end technologies, such as React.js, HTML, CSS, and JavaScript, complemented by
+            proficiency in Bootstrap and Tailwind CSS. My goal is to contribute my tech skills effectively.I'm currently
+            expanding my skills by learning the MERN stack to further excel in the tech industry.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/icons8-down.gif" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/icons8-html-48.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/icons8-css-48.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/icons8-javascript (1).gif" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/icons8-java.gif" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/icons8-sql-60.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/icons8-c-programming-48.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/icons8-react-native.gif" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React.js</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/icons8-nodejs-48.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/icons8-javascript.gif" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/icons8-git-48.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/icons8-tailwind-css-100.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TailwindCSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/mernstack.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MERN Stack</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/icons8-down.gif" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/LinkedIn Clone Elevate Your Career.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Linkedin Clone</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/Linkedin-clone'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://linkedin-clone-ionicthor.vercel.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/youtube banner.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">YouTube Clone</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/youtube-clone'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtube-clone-ten-phi.vercel.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Spotifyvid.gif" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Spotify Clone</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/spotify-clone'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://spotify-clone-phi-woad.vercel.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/newS.gif" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">NewsBrezze</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/newsbrezze'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://newsbrezze.vercel.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/news monkey.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">NewsMonkey</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/NewsMonkey'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://news-monkey-xi.vercel.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/wallyvid.gif" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Wally</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/Wally'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://wallpaper-website.ioniccompound.repl.co/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/threads.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Threads Clone</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/backend_Threadsclone'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/backend_Threadsclone'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/icons8-down.gif" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/icons8-gmail-logo.gif" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:rohit111ghosh@gmail.com">rohit111ghosh@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/icons8-linkedin.gif" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/rohitghosh07/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 <a href="https://www.linkedin.com/in/rohitghosh07/" target="_blank">Rohit Ghosh</a>. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
