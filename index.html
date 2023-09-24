@@ -5,12 +5,20 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Rohit Ghosh - portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" type="image/png" href="./assets/code.png">
+
 </head>
 
 <body>
+  <div class="loader_bg">
+    <img src="./assets/ttbatball.gif" alt="">
+
+    <!-- <div class="loader">
+    </div> -->
+  </div>
   <nav id="desktop-nav">
     <div class="logo">Rohit Ghosh</div>
     <div>
@@ -215,10 +223,12 @@
           </div>
           <h2 class="experience-sub-title project-title">Linkedin Clone</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/Linkedin-clone'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/RohitGhosh07/Linkedin-clone'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://linkedin-clone-ionicthor.vercel.app/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://linkedin-clone-ionicthor.vercel.app/'">
               Live Demo
             </button>
           </div>
@@ -229,10 +239,12 @@
           </div>
           <h2 class="experience-sub-title project-title">YouTube Clone</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/youtube-clone'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/RohitGhosh07/youtube-clone'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtube-clone-ten-phi.vercel.app/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://youtube-clone-ten-phi.vercel.app/'">
               Live Demo
             </button>
           </div>
@@ -243,10 +255,12 @@
           </div>
           <h2 class="experience-sub-title project-title">Spotify Clone</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/spotify-clone'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/RohitGhosh07/spotify-clone'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://spotify-clone-phi-woad.vercel.app/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://spotify-clone-phi-woad.vercel.app/'">
               Live Demo
             </button>
           </div>
@@ -257,7 +271,8 @@
           </div>
           <h2 class="experience-sub-title project-title">NewsBrezze</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/newsbrezze'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/RohitGhosh07/newsbrezze'">
               Github
             </button>
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://newsbrezze.vercel.app/'">
@@ -271,7 +286,8 @@
           </div>
           <h2 class="experience-sub-title project-title">NewsMonkey</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/NewsMonkey'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/RohitGhosh07/NewsMonkey'">
               Github
             </button>
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://news-monkey-xi.vercel.app/'">
@@ -288,7 +304,8 @@
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/Wally'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://wallpaper-website.ioniccompound.repl.co/'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://wallpaper-website.ioniccompound.repl.co/'">
               Live Demo
             </button>
           </div>
@@ -299,10 +316,12 @@
           </div>
           <h2 class="experience-sub-title project-title">Threads Clone</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/backend_Threadsclone'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/RohitGhosh07/backend_Threadsclone'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RohitGhosh07/backend_Threadsclone'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/RohitGhosh07/backend_Threadsclone'">
               Live Demo
             </button>
           </div>
@@ -336,9 +355,16 @@
         </ul>
       </div>
     </nav>
-    <p>Copyright &#169; 2023 <a href="https://www.linkedin.com/in/rohitghosh07/" target="_blank">Rohit Ghosh</a>. All Rights Reserved.</p>
+    <p>Copyright &#169; 2023 <a href="https://www.linkedin.com/in/rohitghosh07/" target="_blank">Rohit Ghosh</a>. All
+      Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    setTimeout(function () {
+      $('.loader_bg').fadeToggle();
+    }, 1500);
+  </script>
 </body>
 
 </html>
