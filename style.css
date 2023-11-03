@@ -408,8 +408,10 @@ section {
 
 .experience-details-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow-x: auto; /* Add horizontal scrolling if the content overflows */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
 }
 
 .article-container {
